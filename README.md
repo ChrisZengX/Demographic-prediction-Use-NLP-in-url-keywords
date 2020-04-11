@@ -9,6 +9,9 @@ All the processes applied in both test and train file.
 1. We applied TfidfVectorizer to change words to vectors, there are about 67k words in the final dictionary
 2. For the "sex" prediction, we tried 3 classifiers: MultinomialNB, Logistic regression and Random Forest. based on the test result on AUC and accuracy, we chose Logistic regression(about 0.67 on AUC).  
 3. For the "age" prediction, we tried 7 regressors: MultinomialNB, Logistic regression, Linear regression, Random Forest, Adabooster Regresso, Gradientboosting and SGD regressor. based on the test result on MSE, MAE, R2 and the accuracy of a age range of ±5 years(about 31% in the end), we chose SGD regressor(about 0.11 of R square and 10 of MAE).  
+
+#For the Result file:
+Please note that there are only 285 million rows in the result file cause there are about 26 millions rows of empty value(in keywords) in the original test file(311 million rows in total), we decide not to predict those empty rows.
   
 #Below is the description of the assignment:  
 When a user visits (one of ) our websites, we collect information about keywords extracted from the website's url. For each user, the frequency of visits per keyword per day is also stored. For example, suppose that a given user has visited the two following sites recently:  
