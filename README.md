@@ -1,4 +1,4 @@
-# Demographic-prediction-using-NLP-in-url-keywords--MLP -- Team 12  
+# Demographic-prediction-using-NLP-in-url-keywords--MLP
 #For the Data preparation/cleaning process, we:  
 1. dropped any row with a na value in keywords(both train and test).   
 2. transferred the frenquency format(word:frequency;word:frequency...) to words format by frequency(word1 word1...word2 word2...).  
